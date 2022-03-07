@@ -1,6 +1,6 @@
-package pm;
+package day2;
 
-public class Ex_for {
+public class ExPm_for {
 	public static void main(String[] args) {
 
 //		for(start; stop; step) {

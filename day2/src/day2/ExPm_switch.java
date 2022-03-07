@@ -1,8 +1,8 @@
-package pm;
+package day2;
 
 import java.util.Scanner;
 
-public class Ex_switch {
+public class ExPm_switch {
 	public static void main(String[] args) {
 //		스위치문 기본
 //		int a = 2;

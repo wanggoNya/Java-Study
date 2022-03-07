@@ -1,6 +1,6 @@
-package pm;
+package day2;
 
-public class Exam_test {
+public class ExPm_test {
 	public static void main(String[] args) {
 //		String a = " ";
 //		String j = "*";

@@ -6,9 +6,9 @@ class superA{
 	}
 }
 
-class superB extends superA {
+class superB extends superA { //B는 A의 상속을 받는다.
 	superB() {
-		super(); //생략하면 자바가 자동으로 만들어준다.
+		super(); //생략하면 자바가 자동으로 만들어준다. A(부모)의 생성자가 호출된다.
 		System.out.println("B constructor");
 	}
 }
@@ -33,6 +33,7 @@ class superD extends superC {
 
 public class Ex_Super2 {
 public static void main(String[] args) {
+	
 	superA sa = new superA();
 	System.out.println();
 	

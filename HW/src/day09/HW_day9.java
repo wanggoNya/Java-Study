@@ -1,10 +1,10 @@
-package day9;
+package day09;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-public class day9 {
+public class HW_day9 {
 	public static void main(String[] args) {
 
 		// 4-30

@@ -1,4 +1,4 @@
-package day5;
+package day05;
 import java.util.Random;
 import java.util.Scanner;
 public class HW_day5 {

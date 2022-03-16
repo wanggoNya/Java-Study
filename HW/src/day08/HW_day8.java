@@ -1,8 +1,8 @@
-package day8;
+package day08;
 
 import java.util.Scanner;
 
-public class day8 {
+public class HW_day8 {
 public static void main(String[] args) {
 //	4-22
 	Scanner sc1 = new Scanner(System.in);

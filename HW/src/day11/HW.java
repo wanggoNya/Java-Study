@@ -5,20 +5,14 @@ import java.util.Scanner;
 
 public class HW {
 	public static void main(String[] args) {
+		Correct cor = new Correct();
+		Month mon = new Month();
 		
-		Month month1 = new Month();
-		Answer answer1 = new Answer();
-		Correct correct1 = new Correct();
-		
-		month1.setMon(0); // 0 이 아닌 난수가 나온다 !??
-		correct1.setMon(0);
-		correct1.cor();
+		System.out.println(cor.cor());
+		System.out.println();
 		
 		
 		
-		System.out.println(month1.mon);
-		System.out.println(correct1.mon);
-//		System.out.println(correct1.correct);
 	}
 }
 
@@ -30,11 +24,9 @@ class Month {
 	}
 }
 
-class Answer extends Month {
-	void ans(String answer) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("");
-		answer = sc.next();
+class Enter {
+	Enter(String answer) {
+		return;
 	}
 }
 
@@ -63,9 +55,8 @@ class Correct extends Month {
 			return correct = "October";
 		}else if(this.mon == 11) {
 			return correct = "November";
-		}else if(this.mon == 12) {
+		}else if(this.mon == 12){
 			return correct = "December";
 		}
-		return "";
 }
 }

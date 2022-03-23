@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	int n;
 	
 	do {
-		System.out.println("요수 수  : ");
+		System.out.println("요소 수  : ");
 		n = sc.nextInt();
 	}while (n > 10);
 	int[] arr = new int[n];

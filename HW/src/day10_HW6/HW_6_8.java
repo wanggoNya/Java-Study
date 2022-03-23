@@ -2,7 +2,7 @@ package day10_HW6;
 
 import java.util.Scanner;
 
-public class HW6_8 {
+public class HW_6_8 {
 	public static void main(String[] args) {
 
 // 6-8

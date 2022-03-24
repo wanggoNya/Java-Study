@@ -34,6 +34,7 @@ public class HW_6_18 {
 			}
 		}
 		int sum = 0;
+		System.out.println("\n두 행렬의 곱은");
 		for(int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
 				for (int k = 0; k < 3; k++) {

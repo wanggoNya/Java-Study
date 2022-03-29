@@ -1,3 +1,4 @@
+
 #121. 
 Immutable class는 무엇인가? Immutable String은 무엇인가?
 Immutable class(불변 클래스)는 변경이 불가능한, 즉 가변적이지 않은 클래스를 말한다.

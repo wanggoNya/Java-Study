@@ -43,19 +43,19 @@ public class Question_41_ver2 {
 		for (int i = 0; i < moves.length; i++) {
 			String go = moves[i];
 			if (go.equals("L")) {
-				if ((y -= 1) > -1) {
+				if ((y - 1) > -1) {
 					y -= 1;
 				}
 			} else if (go.equals("R")) {
-				if ((y += 1) < map) {
+				if ((y + 1) < map) {
 					y += 1;
 				}
 			} else if (go.equals("U")) {
-				if ((x -= 1) > -1) {
+				if ((x - 1) > -1) {
 					x -= 1;
 				}
 			} else if (go.equals("D")) {
-				if ((x += 1) < map) {
+				if ((x + 1) < map) {
 					x += 1;
 				}
 			}
@@ -64,8 +64,4 @@ public class Question_41_ver2 {
 		System.out.println("현재 위치는 " + x + "\t" + y + " 입니다.");
 
 	}
-}
-
-class Travel {
-	
 }

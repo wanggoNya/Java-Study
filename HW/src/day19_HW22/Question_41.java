@@ -22,12 +22,15 @@ public class Question_41 {
 
 		// nextLine으로 공백 입력을 받기 전 입력받았던 모든 값 초기화
 		sc.nextLine();
+		
 		// 계획서 입력 받음
 		System.out.println("L : 왼 쪽으로 한 칸\nR : 오른 쪽으로 한 칸\nU : 위로 한 칸\nD : 아래로 한 칸");
 		System.out.println("사이에 공백을 넣어 계획서를 완성하세요. \n예시 > U D U L L R D L");
 		move = sc.nextLine();
+		
 		// 공백 기준으로 잘라서 계획서 배열에 입력
 		String[] moves = move.split("\\s+");
+		
 		// 계획서 출력해서 확인
 		System.out.println("당신의 여행 계획은 " + Arrays.toString(moves));
 
@@ -36,7 +39,7 @@ public class Question_41 {
 		int y = 0;
 		int now = maps[x][y];
 
-		//
+		// 계획에 맞춰 움직인다.
 		for (int i = 0; i < moves.length; i++) {
 			String go = moves[i];
 			if (go.equals("L")) {

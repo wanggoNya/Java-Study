@@ -1,7 +1,7 @@
 package day19_HW22;
 
 import java.util.*;
-public class Question_41_ver2 {
+public class Question_41 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -34,19 +34,11 @@ public class Question_42 {
 		int possible = 0;
 
 		// 왼쪽 위 대각선
-		if ((x - 1) > 0 && (y - 1) > 0) {
-			possible += 2;
-		}
-		// 왼쪽 아래 대각선
-		if ((x + 1) < 9 && (y - 1) > 0) {
-			possible += 2;
-		}
-		// 오른쪽 위 대각선
-		if ((x - 1) > 0 && (y + 1) < 9) {
+		if ((x - 1) > 0 && (y - 2) > 0) {
 			possible += 2;
 		}
 		// 오른쪽 아래 대각선
-		if ((x + 1) < 9 && (y + 1) < 9) {
+		if ((x + 1) < 9 && (y + 2) < 9) {
 			possible += 2;
 		}
 

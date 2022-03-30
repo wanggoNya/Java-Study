@@ -14,7 +14,7 @@ public class Question_41 {
 		do {
 			System.out.print("몇 칸 짜리 지도를 만들까요? 1 이상, 100 이하의 숫자를 말하세요. >> ");
 			map = sc.nextInt();
-		} while (map < 1 || map > 100);
+		} while (map < 1 && map > 100);
 
 		// 지도 칸 수 만큼 2차원 배열 생성
 		int[][] maps = new int[map][map];

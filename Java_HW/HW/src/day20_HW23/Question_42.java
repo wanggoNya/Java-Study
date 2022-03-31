@@ -35,11 +35,11 @@ public class Question_42 {
 
 		// 왼쪽 위 대각선
 		if ((x - 1) > 0 && (y - 2) > 0) {
-			possible += 2;
+			possible += 1;
 		}
 		// 오른쪽 아래 대각선
 		if ((x + 1) < 9 && (y + 2) < 9) {
-			possible += 2;
+			possible += 1;
 		}
 
 		System.out.println("나이트는 " + possible + "가지의 경로로 이동이 가능합니다.");

@@ -3,7 +3,6 @@ package day21_HW24;
 import java.util.*;
 
 public class Question_44_Ans {
-
 	public static int n, m;
 	public static int[][] graph = new int[1000][1000];
 
@@ -15,8 +14,6 @@ public class Question_44_Ans {
 		if (graph[x][y] == 0) { // 현재 노드를 아직 방문하지 않았다면
 			graph[x][y] = 1; // 해당 노드 방문 처리
 			// 상, 하, 좌, 우의 위치들도 모두 재귀적으로 호출
-			
-			// 한 칸씩 이동
 			dfs(x - 1, y);
 			dfs(x, y - 1);
 			dfs(x + 1, y);

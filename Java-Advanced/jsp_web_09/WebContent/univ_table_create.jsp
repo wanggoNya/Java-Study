@@ -24,9 +24,12 @@
 // 테이블 만들기 SQL
 		
 	String sql = "CREATE TABLE student("
-			+"hakbun int not null,"
-			+"name	varchar(10),"
-			+"dept	varchar(20),"
+			+"hakbun int NOT NULL,"
+			+"name	varchar(20),"
+			+"gender varchar(10),"
+			+"year tinyint,"
+			+"dept	varchar(30),"
+			+"addr	varchar(50),"
 			+"primary key(hakbun))";
 
    pstmt = conn.prepareStatement(sql);

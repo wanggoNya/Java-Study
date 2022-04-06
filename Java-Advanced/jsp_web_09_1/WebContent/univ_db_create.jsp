@@ -38,22 +38,15 @@
 	   
 	   pstmt.executeUpdate(); // 구문 객체 실행
 	   
-	   out.print("SooyeonKim DB 생성 성공!!<br>");
+	   out.print("university DB 생성 성공!!<br>");
 	   
 	} catch (SQLException sqlerr){
-	   out.print("SooyeonKim DB 생성 성공!!<br>");
+	   out.print("university DB 생성 성공!!<br>");
 	   
 	}finally {
-		   // DB 연결 종료
-		   if (conn != null){
-			   try{
-				   conn.close();
-				   out.print("SQL 서버 연결 종료<bt>");
-			   }catch (Exception conerr){
-				   conerr.printStackTrace();
+		  
 			   }
-		   }
-}
+		   
 
 
 %>

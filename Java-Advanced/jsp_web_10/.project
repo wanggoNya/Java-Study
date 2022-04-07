@@ -3,6 +3,7 @@
 	<name>jsp_web_10</name>
 	<comment></comment>
 	<projects>
+		<project>mysql-connector-java-8.0.28</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

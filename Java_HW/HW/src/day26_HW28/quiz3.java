@@ -36,7 +36,7 @@ public class quiz3 {
         
         char[] tagg_arr = tagg.toCharArray();
         char[] ccag_arr = ccag.toCharArray();
-        char[] agcc_arr = dna.toCharArray();
+        char[] agcc_arr = agcc.toCharArray(); 
         
         for(int i = 0; i < dnaarr.length; i++) {
         	

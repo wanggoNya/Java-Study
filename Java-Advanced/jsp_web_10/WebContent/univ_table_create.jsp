@@ -29,7 +29,6 @@ String sql = "CREATE TABLE student("
    pstmt = conn.prepareStatement(sql);
    pstmt.executeUpdate(); 
    
-   
 // DB 연결 종료
    if (pstmt != null) pstmt.close();
    if (conn != null) conn.close();

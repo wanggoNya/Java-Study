@@ -18,8 +18,8 @@ public class Question_276 {
 		}
 		
 		// 경우의 수 구하는 class 생성
-		Fence fence = new Fence();
-		System.out.println(fence.color());
+		Solution solution = new Solution();
+		System.out.println(solution.color());
 		
 	}
 }
@@ -27,13 +27,25 @@ public class Question_276 {
 //하나의 기둥에는 k개의 색이 올 수 있음. => k^n
 // 예외 처리 : 옆 기둥과 같으면 개수에서 빼준다.
 
-class Fence {
-	double color(int a) {
-//		double count = Math.pow(k, c[0].length); // k^n
+class Solution {
+	int numWays(int n, int k) {
+		if (n <= 1)
+			return n*k;
+		if (n == 2)
+			return k*k;
 		
+		int preDiffColor = k * (k - 1);
+		int preSameColor = k;
+		int diffColor = 0, SameColor = 0;
 
-		
-		return count;
+		for (int i = 2; i < n ; i++) {
+			diffColor = (preDiffColor + preSameColor) * (k-1);
+			SameColor = preDiffColor;
+
+			preDiffColor = diffColor;
+			preSameColor = SameColor;
+		}		
+		return diffColor + SameColor;
 	}
 	
 }

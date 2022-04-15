@@ -1,7 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Gowun+Batang&family=Nanum+Pen+Script&display=swap');
+</style>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet" href="main.css">
+</head>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+  <nav class="navbar navbar-expand-lg navbar-dark"  
+  style="
+  background-color: #FFE4B5;  
+  font-family: 'Black And White Picture', sans-serif; 
+  color : #FFE4B5;" 
+  aria-label="Tenth navbar example">
+  
   <div class="container-fluid">
     <a class="navbar-brand" href="#">바로가기 >></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

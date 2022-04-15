@@ -6,8 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="main.css">
 <title>Welcome</title>
 </head>
+
 <body>
 	<!-- CSS only -->
 	<link

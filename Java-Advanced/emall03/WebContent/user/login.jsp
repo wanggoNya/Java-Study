@@ -38,7 +38,6 @@
 		    
 <main class="form-signin">
   <form action="logindb.jsp" method="POST">
-    <img class="mb-4" src="https://austin.sogang.ac.kr/dataview/board/editor/20190703_1113_3410001.jpg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">로그인 하세요</h1>
 
     <div class="form-floating">

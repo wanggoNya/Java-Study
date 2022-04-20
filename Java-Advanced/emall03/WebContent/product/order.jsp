@@ -13,11 +13,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>상품 목록</title>
+<title>상품 주문</title>
 </head>
 <body>
 	<%!// 선언문
-	String title = "상품 목록";%>
+	String title = "상품 주문";%>
 	<!-- CSS only -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"

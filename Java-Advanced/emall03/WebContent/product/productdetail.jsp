@@ -5,7 +5,7 @@
 <%
 	String uid = (String) session.getAttribute("id");
 	if (uid == null) {
-		response.sendRedirect("/user/login.jsp");
+		response.sendRedirect("../user/login.jsp");
 		return;
 	} //세션 정보를 확인해서 로그인 상태인지 확인한후 진입 허용 
 %>
@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>상품 상세</title>
 </head>
 <body>
 	<%!// 선언문
@@ -51,11 +51,11 @@
 					<b>상품코드 : <%=product.getPid()%></b>
 				<p>
 					<b>상품가격 : <%=product.getPprice()%></b> 
-				<p>	
-					<a href=""
-						class="btn btn-info">상품주문</a> <a href="productlist.jsp"
-						class="btn btn-secondary">상품목록</a>
-			</div>
+				<p>
+					<a
+						href="orderconfirm.jsp?pid=<%=product.getPid()%>&pprice=<%=product.getPprice()%>&pname=<%=product.getPname()%>"
+						class="btn btn-secondary" role="button">상세정보</a> <a
+						href="productlist.jsp" class="btn btn-secondary">상품목록</a></div>
 
 		</div>
 	</div>

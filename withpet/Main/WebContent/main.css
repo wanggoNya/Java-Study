@@ -1,10 +1,14 @@
 /* stylelint-disable selector-list-comma-newline-after */
 @font-face {
-	font-family: 'IM_Hyemin-Bold';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-	font-weight: normal;
-	font-style: normal;
-  }
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+}
 
   .image-box {
     width:380px;
@@ -19,15 +23,13 @@
     object-fit:cover;
 }
 
-
-
-  .blog-header {
+.blog-header {
 	line-height: 1;
 	border-bottom: 1px solid #e5e5e5;
   }
   
   .blog-header-logo {
-	font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: 'GangwonEdu_OTFBoldA'; 
 	font-size: 2.25rem;
   }
   
@@ -36,7 +38,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-	font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: 'GangwonEdu_OTFBoldA';
   }
   
   .display-4 {
@@ -47,9 +49,6 @@
 	  font-size: 3rem;
 	}
   }
-  
-
-
 
   *{margin: 0; padding: 0;}
   button{background: 0 none; border: 0 none;}
@@ -59,12 +58,6 @@
   .buttons button:before{content: ""; z-index: -1; position: absolute; background: #225ea7; transition: all 1s;}
 .buttons .button4:before{left: 0; top: 0; width: 0; height: 100%; border-bottom-right-radius: 50%; border-top-right-radius: 50%;}
 .buttons .button4:hover:before{width: 200%;}
-
-
-
-
-
-
 
   .nav-scroller {
 	position: relative;

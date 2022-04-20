@@ -1,0 +1,22 @@
+<img class="mySlides" src="img/main1.png" width="30%" >
+<img class="mySlides" src="img/main2.png" width="30%">
+<img class="mySlides" src="img/main3.png" width="30%">
+<a class="w3-btn-floating" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-btn-floating" onclick="plusDivs(+1)">&#10095;</a>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>

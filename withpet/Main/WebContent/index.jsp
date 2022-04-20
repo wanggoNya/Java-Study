@@ -1,30 +1,27 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Blog Template · Bootstrap v5.0</title>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blog Template Â· Bootstrap v5.1</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
 
-    
+    <script src="header.html"></script>
+
+    <script src="footer.html"></script>
 
     <!-- Bootstrap core CSS -->
-<link href="blog.rtl.css" rel="stylesheet">
-<link rel="stylesheet" href="/SRC2/css3dropdown1/style.css" media="screen">
- 
-     
-<style type="text/css">
-  html, body { margin: 0; padding: 0; }
-  ul.menu { margin: 50px auto 0 auto; }
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
-        -moz-user-select: none;
+        -moz-user-select: none;.
         user-select: none;
       }
 
@@ -34,64 +31,78 @@
         }
       }
     </style>
-       
-    
-    <!-- Custom styles for this template -->
-   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
-  
 
-        
-        <ul class="menu">
-          <li><a href="#">My dashboard</a></li>
-          <li><a href="#">Likes</a>
-            <ul>
-              <li><a href="#" class="documents">Documents</a></li>
-              <li><a href="#" class="messages">Messages</a></li>
-              <li><a href="#" class="signout">Sign Out</a></li>
-            </ul>
-          
-          </li>
-          <li><a href="#">Views</a>
-            <ul>
-              <li><a href="#" class="documents">Documents</a></li>
-              <li><a href="#" class="messages">Messages</a></li>
-              <li><a href="#" class="signout">Sign Out</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Uploads</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Documents</a></li>
-        </ul>
-        
-        
-  
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
-        </div>
-      </header>
+    
+<img class="mySlides" src="img/main1.png" width="30%" >
+<img class="mySlides" src="img/main2.png" width="30%">
+<img class="mySlides" src="img/main3.png" width="30%">
+<a class="w3-btn-floating" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-btn-floating" onclick="plusDivs(+1)">&#10095;</a>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Large</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
     </div>
   </header>
 
-<main class="container">
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="#">World</a>
+      <a class="p-2 link-secondary" href="#">U.S.</a>
+      <a class="p-2 link-secondary" href="#">Technology</a>
+      <a class="p-2 link-secondary" href="#">Design</a>
+      <a class="p-2 link-secondary" href="#">Culture</a>
+      <a class="p-2 link-secondary" href="#">Business</a>
+      <a class="p-2 link-secondary" href="#">Politics</a>
+      <a class="p-2 link-secondary" href="#">Opinion</a>
+      <a class="p-2 link-secondary" href="#">Science</a>
+      <a class="p-2 link-secondary" href="#">Health</a>
+      <a class="p-2 link-secondary" href="#">Style</a>
+      <a class="p-2 link-secondary" href="#">Travel</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container" >
+  <div class="p-4 p-md-5 mb-4 text-white rounded" style="background-color: peachpuff;">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+      <h1 class="display-4 fst-italic">감동적인 멘트</h1>
+      <img class="main" src="img/main4.png" style="float : right;" width="100%">
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about whatâs most interesting in this postâs contents.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a>
+      </p>
     </div>
   </div>
+  
 
   <div class="row mb-2">
     <div class="col-md-6">
@@ -136,7 +147,7 @@
         <h2 class="blog-post-title">Sample blog post</h2>
         <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
 
-        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+        <p>This blog post shows a few different types of content thatâs supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
         <hr>
         <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
         <h2>Blockquotes</h2>
@@ -158,7 +169,7 @@
           <li>Second list item with a longer description</li>
           <li>Third list item to close it out</li>
         </ol>
-        <p>And this is a definiton list:</p>
+        <p>And this is a definition list:</p>
         <dl>
           <dt>HyperText Markup Language (HTML)</dt>
           <dd>The language used to describe and define the content of a Web page</dd>
@@ -173,7 +184,7 @@
           <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
           <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
           <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li>Citations, like <cite>â Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
           <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
           <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
         </ul>
@@ -249,7 +260,7 @@
 
       <nav class="blog-pagination" aria-label="Pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+        <a class="btn btn-outline-secondary disabled">Newer</a>
       </nav>
 
     </div>
@@ -300,6 +311,8 @@
   </p>
 </footer>
 
+
+    
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     

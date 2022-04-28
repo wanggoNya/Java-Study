@@ -103,25 +103,31 @@ public UserDTO getDetail(String pid) throws NamingException, SQLException{
 		if (conn != null)
 			conn.close();
 	}
+
 }
-
 public int login(String uid, String upw)
-throws NamingException, SQLException{
-	conn = ConnectionPool.get();
-	pstmt = conn.prepareStatement(sql);
-	pstmt.setNString(1, pid);
-	rs = pstmt.executeQuery();
-	rs.next();
-	
-	try {
-		String sql = "SELECT uid, upw fROM user where uid = ?";
-		
-		conn = ConnectionPool.get();
-		pstmt = conn.prepareStatement(sql);
-		pstmt.setNString(1, pid);
-		rs = pstmt.executeQuery();
-		rs.next();		
-	}
-
+		   throws NamingException, SQLException {   
+		      
+		      Connection conn = null;
+		      PreparedStatement pstmt = null;
+		      ResultSet rs = null;
+		   
+		      try {
+		         String sql = "SELECT uid, upw FROM user where uid = ?";
+		         
+		         conn = ConnectionPool.get();
+		         pstmt = conn.prepareStatement(sql);
+		               pstmt.setString(1,uid);
+		         rs = pstmt.executeQuery();
+		         
+		         if (!rs.next()) return 1;                        //회원이 아닌 경우
+		         if (!upw.equals(rs.getString("upw"))) return 2;  //암호 틀린 경우
+		         
+		         return 0;
+		      } finally {
+		         if(rs != null) rs.close();
+		         if(pstmt != null) pstmt.close();
+		         if(conn != null) conn.close();
+}
 }
 }
